@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowing Text</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+        .glow-text {
+            font-size: 100px;
+            font-weight: bold;
+            color: #87CEFA;
+            text-shadow: 0 0 10px #87CEFA, 0 0 20px #87CEFA, 0 0 40px #87CEFA, 0 0 80px #87CEFA;
+            animation: glow 1.5s infinite alternate;
+        }
+        @keyframes glow {
+            0% {
+                text-shadow: 0 0 10px #87CEFA, 0 0 20px #87CEFA, 0 0 40px #87CEFA;
+            }
+            100% {
+                text-shadow: 0 0 20px #87CEFA, 0 0 40px #87CEFA, 0 0 80px #87CEFA;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glow-text">JABEEN</div>
+</body>
+</html>
